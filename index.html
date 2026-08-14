@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>رامتین | گالری هوش مصنوعی</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- منوی سایت -->
+    <nav class="navbar">
+        <div class="logo">رامتین AI 🤖</div>
+
+        <div class="nav-links">
+            <a href="#home">خانه</a>
+            <a href="#about">درباره من</a>
+            <a href="#gallery">گالری</a>
+            <a href="#videos">ویدیوها</a>
+            <a href="#projects">پروژه‌ها</a>
+            <a href="#contact">ارتباط</a>
+        </div>
+    </nav>
+
+
+    <!-- صفحه اصلی -->
+    <header id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome">به دنیای خلاقیت من خوش آمدید 👋</p>
+
+            <h1>
+               سلام! من <span>رامتین و بنیامین</span> هستیم 👋
+            </h1>
+
+            <p class="hero-text">
+                اینجا مجموعه‌ای از تصاویر، ویدیوها و پروژه‌هایی
+                که با کمک هوش مصنوعی ساخته‌ام قرار می‌گیرد.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#gallery" class="button">
+                    🖼️ مشاهده گالری
+                </a>
+
+                <a href="#videos" class="button second-button">
+                    🎬 مشاهده ویدیوها
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- درباره من -->
+    <section id="about" class="section">
+
+        <h2>👤 درباره من</h2>
+
+        <p>
+            سلام! من رامتین هستم و به برنامه‌نویسی، کامپیوتر،
+            طراحی و هوش مصنوعی علاقه دارم.
+        </p>
+
+        <p>
+            در این سایت می‌تونم تصاویر، ویدیوها و پروژه‌های
+            مختلفی که می‌سازم رو قرار بدم.
+        </p>
+
+    </section>
+
+
+    <!-- مهارت ها -->
+    <section class="section">
+
+        <h2>💻 مهارت‌های من</h2>
+
+        <div class="skills">
+
+            <div class="skill-card">
+                <span>🐍</span>
+                <h3>Python</h3>
+                <p>برنامه‌نویسی</p>
+            </div>
+
+            <div class="skill-card">
+                <span>🌐</span>
+                <h3>HTML</h3>
+                <p>ساخت سایت</p>
+            </div>
+
+            <div class="skill-card">
+                <span>🎨</span>
+                <h3>CSS</h3>
+                <p>طراحی سایت</p>
+            </div>
+
+            <div class="skill-card">
+                <span>⚡</span>
+                <h3>JavaScript</h3>
+                <p>تعاملی کردن سایت</p>
+            </div>
+
+            <div class="skill-card">
+                <span>🤖</span>
+                <h3>AI</h3>
+                <p>ساخت محتوای هوش مصنوعی</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- گالری تصاویر -->
+    <section id="gallery" class="section">
+
+        <h2>🖼️ گالری تصاویر AI</h2>
+
+        <p class="section-description">
+            تصاویر ساخته‌شده با هوش مصنوعی من
+        </p>
+
+        <div id="imageGallery" class="media-grid">
+
+            <div class="empty-message">
+                هنوز تصویری اضافه نشده است.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ویدیوها -->
+    <section id="videos" class="section">
+
+        <h2>🎬 ویدیوهای AI</h2>
+
+        <p class="section-description">
+            ویدیوهای ساخته‌شده با هوش مصنوعی من
+        </p>
+
+        <div id="videoGallery" class="media-grid">
+
+            <div class="empty-message">
+                هنوز ویدیویی اضافه نشده است.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- اضافه کردن فایل -->
+    <section class="section upload-section">
+
+        <h2>➕ اضافه کردن تصویر یا ویدیو</h2>
+
+        <p>
+            از این قسمت می‌تونی فایل‌های خودت رو به گالری اضافه کنی.
+        </p>
+
+        <input
+            type="file"
+            id="mediaInput"
+            accept="image/*,video/*"
+            multiple
+        >
+
+        <button id="addMediaButton" class="upload-button">
+            📤 اضافه کردن به گالری
+        </button>
+
+        <p id="uploadStatus"></p>
+
+    </section>
+
+
+    <!-- پروژه ها -->
+    <section id="projects" class="section">
+
+        <h2>🛠️ پروژه‌های من</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>🤖 پروژه هوش مصنوعی</h3>
+                <p>
+                    پروژه‌ای برای ساخت محتوای خلاقانه با هوش مصنوعی.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>🌐 سایت شخصی</h3>
+                <p>
+                    همین سایتی که در حال ساخت آن هستیم.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>🐍 پروژه Python</h3>
+                <p>
+                    پروژه‌های برنامه‌نویسی که با Python ساخته می‌شوند.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ارتباط -->
+    <section id="contact" class="section contact">
+
+        <h2>📞 ارتباط با من</h2>
+
+        <p>
+        📧 ایمیل رامتین:
+        <a href="mailto:ramtin.mrg.@gmail.com">
+            ramtin.mrg.@gmail.com
+        </a>
+    </p>
+
+    <p>
+        📧 ایمیل بنیامین:
+        <a href="mailto:benyaminbedrodian@gmail.com">
+            benyaminbedrodian@gmail.com
+        </a>
+    </p>
+
+
+    </section>
+
+
+    <!-- پایین سایت -->
+    <footer>
+
+        <p>
+            © 2026 رامتین و بنیامین| ساخته‌شده با ❤️ و 💻
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
